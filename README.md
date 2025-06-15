@@ -63,6 +63,10 @@ The project implements a **Star Schema** data model:
 | `price`        | NUMERIC | Unit price           |
 | `total_amount` | NUMERIC | quantity \* price    |
 
+📷 Example Fact Table Output:
+
+![fact\_table](https://github.com/zareee12/ETL-Pipeline-to-Data-Warehouse-with-Apache-Airflow/blob/main/Images/fact%20table.jpeg)
+
 ### Dimension Tables
 
 * **`dim_customer`**: customer info (name, gender, city, country)
@@ -91,6 +95,10 @@ start
              └─► transform_fact
                  └─► end
 ```
+
+📷 DAG Visualization:
+
+![airflow\_graph](https://github.com/zareee12/ETL-Pipeline-to-Data-Warehouse-with-Apache-Airflow/blob/main/Images/graph%20airflow.jpg)
 
 ---
 
