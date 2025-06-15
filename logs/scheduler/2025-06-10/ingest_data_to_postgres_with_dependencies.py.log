@@ -1,0 +1,366 @@
+[2025-06-10T10:03:26.292+0000] {processor.py:186} INFO - Started process (PID=6793) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:03:26.293+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:03:26.296+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.296+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:03:26.335+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:03:26.480+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.479+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.492+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.492+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.500+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.500+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.510+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.510+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.518+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.518+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.527+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.527+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.535+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.534+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.535+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.535+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:03:26.557+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.556+0000] {dag.py:3252} INFO - Creating ORM DAG for ingest_data_to_postgres_with_dependencies
+[2025-06-10T10:03:26.558+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:26.558+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:03:26.580+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.296 seconds
+[2025-06-10T10:03:56.750+0000] {processor.py:186} INFO - Started process (PID=6865) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:03:56.752+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:03:56.761+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:56.760+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:03:56.799+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:03:56.872+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:56.872+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:03:56.926+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:03:56.925+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:03:57.018+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.284 seconds
+[2025-06-10T10:04:27.271+0000] {processor.py:186} INFO - Started process (PID=6924) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:04:27.272+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:04:27.276+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:04:27.275+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:04:27.296+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:04:27.322+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:04:27.322+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:04:27.337+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:04:27.337+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:04:27.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.094 seconds
+[2025-06-10T10:04:57.776+0000] {processor.py:186} INFO - Started process (PID=6987) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:04:57.777+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:04:57.779+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:04:57.779+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:04:57.793+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:04:57.813+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:04:57.813+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:04:57.827+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:04:57.827+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:04:57.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.080 seconds
+[2025-06-10T10:05:27.929+0000] {processor.py:186} INFO - Started process (PID=7050) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:05:27.930+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:05:27.932+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:05:27.932+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:05:27.945+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:05:27.967+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:05:27.966+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:05:27.980+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:05:27.980+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:05:28.005+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.082 seconds
+[2025-06-10T10:05:58.878+0000] {processor.py:186} INFO - Started process (PID=7113) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:05:58.879+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:05:58.881+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:05:58.881+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:05:58.897+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:05:58.917+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:05:58.917+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:05:58.932+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:05:58.931+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:05:58.953+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.081 seconds
+[2025-06-10T10:06:29.577+0000] {processor.py:186} INFO - Started process (PID=7176) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:06:29.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:06:29.581+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:06:29.581+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:06:29.597+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:06:29.618+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:06:29.618+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:06:29.634+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:06:29.634+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:06:29.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.086 seconds
+[2025-06-10T10:06:59.863+0000] {processor.py:186} INFO - Started process (PID=7239) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:06:59.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:06:59.867+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:06:59.867+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:06:59.882+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:06:59.903+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:06:59.903+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:06:59.916+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:06:59.916+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:06:59.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.081 seconds
+[2025-06-10T10:07:30.064+0000] {processor.py:186} INFO - Started process (PID=7302) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:07:30.065+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:07:30.068+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:07:30.068+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:07:30.089+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:07:30.116+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:07:30.116+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:07:30.132+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:07:30.131+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:07:30.157+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.099 seconds
+[2025-06-10T10:08:00.522+0000] {processor.py:186} INFO - Started process (PID=7365) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:08:00.523+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:08:00.527+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:08:00.526+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:08:00.545+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:08:00.571+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:08:00.571+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:08:00.585+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:08:00.585+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:08:00.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.091 seconds
+[2025-06-10T10:08:30.761+0000] {processor.py:186} INFO - Started process (PID=7428) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:08:30.762+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:08:30.764+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:08:30.764+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:08:30.778+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:08:30.798+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:08:30.798+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:08:30.811+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:08:30.811+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:08:30.835+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.080 seconds
+[2025-06-10T10:09:01.270+0000] {processor.py:186} INFO - Started process (PID=7495) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:09:01.273+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:09:01.282+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:09:01.282+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:09:01.352+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:09:01.386+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:09:01.385+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:09:01.414+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:09:01.413+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:09:01.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.209 seconds
+[2025-06-10T10:09:31.754+0000] {processor.py:186} INFO - Started process (PID=7565) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:09:31.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:09:31.758+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:09:31.757+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:09:31.776+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:09:31.810+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:09:31.810+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:09:31.831+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:09:31.830+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:09:31.860+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.112 seconds
+[2025-06-10T10:10:02.093+0000] {processor.py:186} INFO - Started process (PID=7628) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:10:02.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:10:02.097+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:10:02.097+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:10:02.114+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:10:02.136+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:10:02.136+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:10:02.150+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:10:02.150+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:10:02.170+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.091 seconds
+[2025-06-10T10:10:32.829+0000] {processor.py:186} INFO - Started process (PID=7691) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:10:32.830+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:10:32.833+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:10:32.833+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:10:32.859+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:10:32.887+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:10:32.887+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:10:32.904+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:10:32.903+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:10:32.926+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.103 seconds
+[2025-06-10T10:11:03.287+0000] {processor.py:186} INFO - Started process (PID=7754) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:11:03.288+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:11:03.291+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:11:03.290+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:11:03.311+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:11:03.349+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:11:03.349+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:11:03.371+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:11:03.371+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:11:03.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.116 seconds
+[2025-06-10T10:11:33.506+0000] {processor.py:186} INFO - Started process (PID=7817) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:11:33.507+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:11:33.510+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:11:33.509+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:11:33.522+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:11:33.545+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:11:33.544+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:11:33.557+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:11:33.557+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:11:33.582+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.082 seconds
+[2025-06-10T10:12:03.632+0000] {processor.py:186} INFO - Started process (PID=7880) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:12:03.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:12:03.636+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:12:03.636+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:12:03.661+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:12:03.687+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:12:03.686+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:12:03.708+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:12:03.707+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:12:03.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.108 seconds
+[2025-06-10T10:12:33.839+0000] {processor.py:186} INFO - Started process (PID=7940) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:12:33.840+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:12:33.842+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:12:33.842+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:12:33.855+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:12:33.876+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:12:33.875+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:12:33.888+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:12:33.888+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:12:33.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.078 seconds
+[2025-06-10T10:13:04.670+0000] {processor.py:186} INFO - Started process (PID=8003) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:13:04.671+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:13:04.674+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:13:04.673+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:13:04.691+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:13:04.715+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:13:04.715+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:13:04.737+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:13:04.736+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:13:04.771+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.109 seconds
+[2025-06-10T10:13:35.592+0000] {processor.py:186} INFO - Started process (PID=8066) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:13:35.593+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:13:35.596+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:13:35.595+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:13:35.614+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:13:35.641+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:13:35.641+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:13:35.659+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:13:35.658+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:13:35.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.097 seconds
+[2025-06-10T10:14:06.465+0000] {processor.py:186} INFO - Started process (PID=8129) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:14:06.466+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:14:06.469+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:14:06.468+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:14:06.488+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:14:06.510+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:14:06.510+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:14:06.524+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:14:06.524+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:14:06.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.088 seconds
+[2025-06-10T10:14:37.008+0000] {processor.py:186} INFO - Started process (PID=8192) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:14:37.009+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:14:37.012+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:14:37.011+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:14:37.029+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:14:37.051+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:14:37.051+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:14:37.065+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:14:37.065+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:14:37.086+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.084 seconds
+[2025-06-10T10:15:07.487+0000] {processor.py:186} INFO - Started process (PID=8255) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:15:07.488+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:15:07.491+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:15:07.491+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:15:07.513+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:15:07.542+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:15:07.542+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:15:07.560+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:15:07.559+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:15:07.586+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.106 seconds
+[2025-06-10T10:15:37.646+0000] {processor.py:186} INFO - Started process (PID=8318) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:15:37.648+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:15:37.650+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:15:37.650+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:15:37.666+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:15:37.687+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:15:37.686+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:15:37.701+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:15:37.701+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:15:37.722+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.083 seconds
+[2025-06-10T10:16:07.859+0000] {processor.py:186} INFO - Started process (PID=8381) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:16:07.859+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:16:07.862+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:16:07.861+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:16:07.877+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:16:07.899+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:16:07.899+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:16:07.914+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:16:07.913+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:16:07.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.081 seconds
+[2025-06-10T10:16:38.348+0000] {processor.py:186} INFO - Started process (PID=8438) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:16:38.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T10:16:38.352+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:16:38.351+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:16:38.368+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T10:16:38.392+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:16:38.392+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T10:16:38.405+0000] {logging_mixin.py:190} INFO - [2025-06-10T10:16:38.405+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T10:16:38.445+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.103 seconds
+[2025-06-10T13:31:35.442+0000] {processor.py:186} INFO - Started process (PID=66) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:31:35.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:31:35.453+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:31:35.452+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:31:35.540+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:31:35.652+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:31:35.652+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:31:35.696+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:31:35.696+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:31:35.759+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.337 seconds
+[2025-06-10T13:32:06.729+0000] {processor.py:186} INFO - Started process (PID=129) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:32:06.731+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:32:06.738+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:32:06.737+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:32:06.775+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:32:06.814+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:32:06.814+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:32:06.841+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:32:06.840+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:32:06.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.160 seconds
+[2025-06-10T13:32:37.835+0000] {processor.py:186} INFO - Started process (PID=192) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:32:37.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:32:37.843+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:32:37.842+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:32:37.874+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:32:37.914+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:32:37.914+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:32:37.938+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:32:37.937+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:32:37.972+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.152 seconds
+[2025-06-10T13:33:08.465+0000] {processor.py:186} INFO - Started process (PID=255) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:33:08.467+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:33:08.471+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:33:08.471+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:33:08.513+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:33:08.547+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:33:08.547+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:33:08.569+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:33:08.569+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:33:08.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.149 seconds
+[2025-06-10T13:33:38.680+0000] {processor.py:186} INFO - Started process (PID=318) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:33:38.682+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:33:38.686+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:33:38.685+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:33:38.717+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:33:38.748+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:33:38.748+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:33:38.770+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:33:38.769+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:33:38.798+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.129 seconds
+[2025-06-10T13:34:09.859+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:34:09.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:34:09.864+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:34:09.864+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:34:09.901+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:34:09.932+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:34:09.931+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:34:09.952+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:34:09.951+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:34:09.981+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.131 seconds
+[2025-06-10T13:34:40.526+0000] {processor.py:186} INFO - Started process (PID=444) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:34:40.528+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:34:40.531+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:34:40.531+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:34:40.561+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:34:40.590+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:34:40.590+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:34:40.608+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:34:40.608+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:34:40.635+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.117 seconds
+[2025-06-10T13:35:11.071+0000] {processor.py:186} INFO - Started process (PID=507) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:35:11.073+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:35:11.078+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:35:11.077+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:35:11.127+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:35:11.170+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:35:11.170+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:35:11.191+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:35:11.191+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:35:11.221+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.163 seconds
+[2025-06-10T13:35:41.873+0000] {processor.py:186} INFO - Started process (PID=570) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:35:41.874+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:35:41.879+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:35:41.879+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:35:41.908+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:35:41.947+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:35:41.946+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:35:41.972+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:35:41.972+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:35:42.012+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.151 seconds
+[2025-06-10T13:36:12.195+0000] {processor.py:186} INFO - Started process (PID=633) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:36:12.196+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:36:12.200+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:36:12.199+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:36:12.226+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:36:12.254+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:36:12.253+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:36:12.273+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:36:12.273+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:36:12.297+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.112 seconds
+[2025-06-10T13:36:42.737+0000] {processor.py:186} INFO - Started process (PID=696) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:36:42.738+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:36:42.742+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:36:42.742+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:36:42.768+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:36:42.795+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:36:42.795+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:36:42.812+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:36:42.812+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:36:42.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.121 seconds
+[2025-06-10T13:37:13.489+0000] {processor.py:186} INFO - Started process (PID=759) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:37:13.491+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:37:13.495+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:37:13.494+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:37:13.525+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:37:13.562+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:37:13.562+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:37:13.583+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:37:13.582+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:37:13.612+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.132 seconds
+[2025-06-10T13:37:43.971+0000] {processor.py:186} INFO - Started process (PID=822) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:37:43.972+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:37:43.975+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:37:43.974+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:37:44.001+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:37:44.034+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:37:44.034+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:37:44.055+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:37:44.055+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:37:44.083+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.122 seconds
+[2025-06-10T13:38:14.635+0000] {processor.py:186} INFO - Started process (PID=885) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:38:14.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:38:14.640+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:38:14.639+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:38:14.663+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:38:14.693+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:38:14.693+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:38:14.715+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:38:14.715+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:38:14.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.115 seconds
+[2025-06-10T13:38:45.202+0000] {processor.py:186} INFO - Started process (PID=948) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:38:45.205+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:38:45.209+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:38:45.208+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:38:45.241+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:38:45.277+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:38:45.277+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:38:45.298+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:38:45.297+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:38:45.341+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.151 seconds
+[2025-06-10T13:39:15.444+0000] {processor.py:186} INFO - Started process (PID=1011) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:39:15.447+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:39:15.455+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:39:15.454+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:39:15.491+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:39:15.526+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:39:15.525+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:39:15.547+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:39:15.547+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:39:15.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.146 seconds
+[2025-06-10T13:39:45.892+0000] {processor.py:186} INFO - Started process (PID=1074) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:39:45.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:39:45.897+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:39:45.897+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:39:45.927+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:39:45.968+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:39:45.967+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:39:45.991+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:39:45.991+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:39:46.017+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.134 seconds
+[2025-06-10T13:40:16.679+0000] {processor.py:186} INFO - Started process (PID=1137) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:40:16.681+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:40:16.684+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:40:16.684+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:40:16.723+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:40:16.750+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:40:16.750+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:40:16.770+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:40:16.770+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:40:16.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.128 seconds
+[2025-06-10T13:40:47.087+0000] {processor.py:186} INFO - Started process (PID=1200) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:40:47.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:40:47.092+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:40:47.091+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:40:47.123+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:40:47.160+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:40:47.160+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:40:47.183+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:40:47.183+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:40:47.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.143 seconds
+[2025-06-10T13:41:17.599+0000] {processor.py:186} INFO - Started process (PID=1263) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:17.601+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:41:17.606+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:17.605+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:17.640+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:17.705+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:17.705+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:41:17.730+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:17.730+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:41:17.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.179 seconds
+[2025-06-10T13:41:48.714+0000] {processor.py:186} INFO - Started process (PID=1326) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:48.716+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:41:48.719+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:48.719+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:48.750+0000] {processor.py:925} INFO - DAG(s) 'ingest_data_to_postgres_with_dependencies' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:48.781+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:48.781+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:41:48.806+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:48.805+0000] {dag.py:4156} INFO - Setting next_dagrun for ingest_data_to_postgres_with_dependencies to None, run_after=None
+[2025-06-10T13:41:48.837+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.133 seconds
+[2025-06-10T13:41:49.916+0000] {processor.py:186} INFO - Started process (PID=1328) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:49.917+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:41:49.922+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:49.922+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:49.983+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:50.157+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.156+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:data_ingestion_to_stg
+[2025-06-10T13:41:50.172+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.172+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:data_ingestion_to_stg
+[2025-06-10T13:41:50.183+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.182+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:data_ingestion_to_stg
+[2025-06-10T13:41:50.195+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.195+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:data_ingestion_to_stg
+[2025-06-10T13:41:50.208+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.208+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:data_ingestion_to_stg
+[2025-06-10T13:41:50.221+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.220+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:data_ingestion_to_stg
+[2025-06-10T13:41:50.232+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.232+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:data_ingestion_to_stg
+[2025-06-10T13:41:50.234+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.234+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:41:50.257+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.257+0000] {dag.py:3252} INFO - Creating ORM DAG for data_ingestion_to_stg
+[2025-06-10T13:41:50.258+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:50.258+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T13:41:50.300+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.396 seconds
+[2025-06-10T13:41:56.347+0000] {processor.py:186} INFO - Started process (PID=1367) to work on /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:56.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py for tasks to queue
+[2025-06-10T13:41:56.353+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:56.352+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:56.398+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py
+[2025-06-10T13:41:56.414+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:56.413+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T13:41:56.432+0000] {logging_mixin.py:190} INFO - [2025-06-10T13:41:56.432+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T13:41:56.465+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ingest_data_to_postgres_with_dependencies.py took 0.125 seconds

@@ -1,0 +1,123 @@
+[2025-06-11T08:24:30.509+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-11T08:24:30.530+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_to_stg.load_dimension_tables.load_dim_customer manual__2025-06-11T08:24:11.898190+00:00 [queued]>
+[2025-06-11T08:24:30.542+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_to_stg.load_dimension_tables.load_dim_customer manual__2025-06-11T08:24:11.898190+00:00 [queued]>
+[2025-06-11T08:24:30.544+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-06-11T08:24:30.559+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): load_dimension_tables.load_dim_customer> on 2025-06-11 08:24:11.898190+00:00
+[2025-06-11T08:24:30.570+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_stg', 'load_dimension_tables.load_dim_customer', 'manual__2025-06-11T08:24:11.898190+00:00', '--job-id', '633', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_to_stg.py', '--cfg-path', '/tmp/tmp76io7dkc']
+[2025-06-11T08:24:30.568+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=376) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-11T08:24:30.608+0000] {standard_task_runner.py:105} INFO - Job 633: Subtask load_dimension_tables.load_dim_customer
+[2025-06-11T08:24:30.608+0000] {standard_task_runner.py:72} INFO - Started process 384 to run task
+[2025-06-11T08:24:30.661+0000] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_to_stg.load_dimension_tables.load_dim_customer manual__2025-06-11T08:24:11.898190+00:00 [running]> on host 8b2e3fa0123b
+[2025-06-11T08:24:30.724+0000] {abstractoperator.py:778} ERROR - Exception rendering Jinja template for task 'load_dimension_tables.load_dim_customer', field 'sql'. Template: '/opt/***/dags/sql/dimensions/dim_customer.sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 770, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 168, in render_template
+    template = jinja_env.get_template(value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /opt/airflow/dags/sql/dimensions/dim_customer.sql
+[2025-06-11T08:24:30.727+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3114, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3533, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1419, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 770, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 168, in render_template
+    template = jinja_env.get_template(value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /opt/airflow/dags/sql/dimensions/dim_customer.sql
+[2025-06-11T08:24:30.739+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-06-11T08:24:30.740+0000] {logging_mixin.py:190} INFO - Task start:2025-06-11 08:24:30.531266+00:00 end:2025-06-11 08:24:30.738957+00:00 duration:0.207691
+[2025-06-11T08:24:30.741+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): load_dimension_tables.load_dim_customer> dag:<DAG: data_ingestion_to_stg> dagrun:<DagRun data_ingestion_to_stg @ 2025-06-11 08:24:11.898190+00:00: manual__2025-06-11T08:24:11.898190+00:00, state:running, queued_at: 2025-06-11 08:24:11.908285+00:00. externally triggered: True>
+[2025-06-11T08:24:30.741+0000] {logging_mixin.py:190} INFO - Failure caused by /opt/***/dags/sql/dimensions/dim_customer.sql
+[2025-06-11T08:24:30.742+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_to_stg, task_id=load_dimension_tables.load_dim_customer, run_id=manual__2025-06-11T08:24:11.898190+00:00, execution_date=20250611T082411, start_date=20250611T082430, end_date=20250611T082430
+[2025-06-11T08:24:30.760+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-06-11T08:24:30.760+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 633 for task load_dimension_tables.load_dim_customer (/opt/airflow/dags/sql/dimensions/dim_customer.sql; 384)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3114, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3533, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1419, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 770, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 168, in render_template
+    template = jinja_env.get_template(value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /opt/airflow/dags/sql/dimensions/dim_customer.sql
+[2025-06-11T08:24:30.784+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-06-11T08:24:30.813+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T08:24:30.815+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

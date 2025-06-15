@@ -1,0 +1,77 @@
+[2025-06-10T14:53:56.800+0000] {processor.py:186} INFO - Started process (PID=68) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:53:56.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:53:56.806+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:53:56.806+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:53:56.864+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:53:57.308+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:53:57.307+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:53:57.329+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:53:57.328+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:53:57.379+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.589 seconds
+[2025-06-10T14:54:28.192+0000] {processor.py:186} INFO - Started process (PID=132) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:54:28.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:54:28.197+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:54:28.196+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:54:28.229+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:54:28.248+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:54:28.247+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:54:28.268+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:54:28.268+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:54:28.298+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.114 seconds
+[2025-06-10T14:54:59.104+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:54:59.106+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:54:59.110+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:54:59.109+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:54:59.145+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:54:59.327+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:54:59.327+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:54:59.347+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:54:59.346+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:54:59.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.289 seconds
+[2025-06-10T14:55:29.853+0000] {processor.py:186} INFO - Started process (PID=269) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:55:29.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:55:29.858+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:55:29.857+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:55:29.891+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:55:29.925+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:55:29.925+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:55:29.942+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:55:29.942+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:55:29.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.121 seconds
+[2025-06-10T14:56:00.538+0000] {processor.py:186} INFO - Started process (PID=333) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:56:00.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:56:00.543+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:56:00.543+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:56:00.568+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:56:00.584+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:56:00.583+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:56:00.607+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:56:00.607+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:56:00.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.107 seconds
+[2025-06-10T14:56:31.443+0000] {processor.py:186} INFO - Started process (PID=397) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:56:31.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:56:31.449+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:56:31.448+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:56:31.484+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:56:31.662+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:56:31.662+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:56:31.679+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:56:31.678+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:56:31.710+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.276 seconds
+[2025-06-10T14:57:01.852+0000] {processor.py:186} INFO - Started process (PID=462) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:57:01.853+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:57:01.856+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:57:01.856+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:57:01.891+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:57:01.908+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:57:01.908+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:57:01.929+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:57:01.929+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:57:01.957+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.113 seconds
+[2025-06-10T14:57:32.470+0000] {processor.py:186} INFO - Started process (PID=526) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:57:32.471+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:57:32.474+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:57:32.474+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:57:32.502+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:57:32.660+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:57:32.660+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:57:32.679+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:57:32.679+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:57:32.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.247 seconds
+[2025-06-10T14:58:02.897+0000] {processor.py:186} INFO - Started process (PID=590) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:02.898+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:58:02.901+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:02.901+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:02.924+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:02.952+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:02.952+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:58:02.969+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:02.969+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:58:02.994+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.103 seconds
+[2025-06-10T14:58:33.370+0000] {processor.py:186} INFO - Started process (PID=654) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:33.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:58:33.376+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:33.376+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:33.409+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:33.592+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:33.591+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:58:33.611+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:33.611+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:58:33.643+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.283 seconds
+[2025-06-10T14:58:34.466+0000] {processor.py:186} INFO - Started process (PID=663) to work on /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:34.468+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/INPUT/data_ingestion_to_stg.py for tasks to queue
+[2025-06-10T14:58:34.471+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:34.470+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:34.511+0000] {processor.py:925} INFO - DAG(s) 'data_ingestion_to_stg' retrieved from /opt/airflow/dags/INPUT/data_ingestion_to_stg.py
+[2025-06-10T14:58:34.530+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:34.530+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-06-10T14:58:34.547+0000] {logging_mixin.py:190} INFO - [2025-06-10T14:58:34.547+0000] {dag.py:4156} INFO - Setting next_dagrun for data_ingestion_to_stg to None, run_after=None
+[2025-06-10T14:58:34.584+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/INPUT/data_ingestion_to_stg.py took 0.124 seconds

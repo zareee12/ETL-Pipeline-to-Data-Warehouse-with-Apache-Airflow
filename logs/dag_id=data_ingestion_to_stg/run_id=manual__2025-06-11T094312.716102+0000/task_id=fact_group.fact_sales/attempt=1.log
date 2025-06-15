@@ -1,0 +1,94 @@
+[2025-06-11T09:43:35.613+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-11T09:43:35.643+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_to_stg.fact_group.fact_sales manual__2025-06-11T09:43:12.716102+00:00 [queued]>
+[2025-06-11T09:43:35.661+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_to_stg.fact_group.fact_sales manual__2025-06-11T09:43:12.716102+00:00 [queued]>
+[2025-06-11T09:43:35.662+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-06-11T09:43:35.681+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): fact_group.fact_sales> on 2025-06-11 09:43:12.716102+00:00
+[2025-06-11T09:43:35.694+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1560) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-11T09:43:35.697+0000] {standard_task_runner.py:72} INFO - Started process 1562 to run task
+[2025-06-11T09:43:35.697+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_stg', 'fact_group.fact_sales', 'manual__2025-06-11T09:43:12.716102+00:00', '--job-id', '909', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_to_stg.py', '--cfg-path', '/tmp/tmp8g1vx_2z']
+[2025-06-11T09:43:35.699+0000] {standard_task_runner.py:105} INFO - Job 909: Subtask fact_group.fact_sales
+[2025-06-11T09:43:35.765+0000] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_to_stg.fact_group.fact_sales manual__2025-06-11T09:43:12.716102+00:00 [running]> on host 50af1b76beaf
+[2025-06-11T09:43:35.877+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_ingestion_to_stg' AIRFLOW_CTX_TASK_ID='fact_group.fact_sales' AIRFLOW_CTX_EXECUTION_DATE='2025-06-11T09:43:12.716102+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-11T09:43:12.716102+00:00'
+[2025-06-11T09:43:35.879+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-11T09:43:35.879+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-11T09:43:35.880+0000] {logging_mixin.py:190} INFO - Current task name:fact_group.fact_sales state:running start_date:2025-06-11 09:43:35.643986+00:00
+[2025-06-11T09:43:35.880+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg and current dag run status:running
+[2025-06-11T09:43:35.880+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-06-11T09:43:35.881+0000] {sql.py:266} INFO - Executing: 
+TRUNCATE TABLE dm.fact_sales;
+
+INSERT INTO dm.fact_sales (
+    sk_date,
+    sk_customer,
+    sk_employee,
+    sk_product,
+    sales_id,
+    transaction_no,
+    quantity,
+    discount,
+    total_price,
+    insert_date
+)
+SELECT DISTINCT ON (s.salesid)
+    d.sk_date,
+    c.sk_customer,
+    e.sk_employee,
+    p.sk_product,
+    s.salesid,
+    s.transactionnumber,
+    s.quantity,
+    s.discount,
+    s.totalprice,
+    CURRENT_DATE
+FROM stg.sales s
+LEFT JOIN dm.dim_time d ON s.salesdate = d.date
+LEFT JOIN dm.dim_customer c ON s.customerid = c.customer_id
+LEFT JOIN dm.dim_employee e ON s.salespersonid = e.employee_id
+LEFT JOIN dm.dim_product p ON s.productid = p.product_id
+ORDER BY s.salesid, s.transactionnumber;
+[2025-06-11T09:43:35.889+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T09:43:35.897+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T09:43:35.941+0000] {sql.py:509} INFO - Running statement: 
+TRUNCATE TABLE dm.fact_sales;
+
+INSERT INTO dm.fact_sales (
+    sk_date,
+    sk_customer,
+    sk_employee,
+    sk_product,
+    sales_id,
+    transaction_no,
+    quantity,
+    discount,
+    total_price,
+    insert_date
+)
+SELECT DISTINCT ON (s.salesid)
+    d.sk_date,
+    c.sk_customer,
+    e.sk_employee,
+    p.sk_product,
+    s.salesid,
+    s.transactionnumber,
+    s.quantity,
+    s.discount,
+    s.totalprice,
+    CURRENT_DATE
+FROM stg.sales s
+LEFT JOIN dm.dim_time d ON s.salesdate = d.date
+LEFT JOIN dm.dim_customer c ON s.customerid = c.customer_id
+LEFT JOIN dm.dim_employee e ON s.salespersonid = e.employee_id
+LEFT JOIN dm.dim_product p ON s.productid = p.product_id
+ORDER BY s.salesid, s.transactionnumber;, parameters: None
+[2025-06-11T09:43:57.961+0000] {sql.py:518} INFO - Rows affected: 99051
+[2025-06-11T09:43:57.995+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-06-11T09:43:57.996+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_stg, task_id=fact_group.fact_sales, run_id=manual__2025-06-11T09:43:12.716102+00:00, execution_date=20250611T094312, start_date=20250611T094335, end_date=20250611T094357
+[2025-06-11T09:43:58.030+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-11T09:43:58.031+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-11T09:43:58.031+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg queued_at:2025-06-11 09:43:12.780670+00:00
+[2025-06-11T09:43:58.032+0000] {logging_mixin.py:190} INFO - Task hostname:50af1b76beaf operator:SQLExecuteQueryOperator
+[2025-06-11T09:43:58.064+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-11T09:43:58.079+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T09:43:58.114+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

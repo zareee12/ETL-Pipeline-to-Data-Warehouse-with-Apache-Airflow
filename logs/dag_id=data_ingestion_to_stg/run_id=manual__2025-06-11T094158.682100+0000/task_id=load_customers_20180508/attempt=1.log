@@ -1,0 +1,31 @@
+[2025-06-11T09:42:12.822+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-11T09:42:12.901+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_to_stg.load_customers_20180508 manual__2025-06-11T09:41:58.682100+00:00 [queued]>
+[2025-06-11T09:42:12.946+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_to_stg.load_customers_20180508 manual__2025-06-11T09:41:58.682100+00:00 [queued]>
+[2025-06-11T09:42:12.957+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-06-11T09:42:13.006+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_customers_20180508> on 2025-06-11 09:41:58.682100+00:00
+[2025-06-11T09:42:13.039+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1340) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-11T09:42:13.048+0000] {standard_task_runner.py:72} INFO - Started process 1371 to run task
+[2025-06-11T09:42:13.052+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_stg', 'load_customers_20180508', 'manual__2025-06-11T09:41:58.682100+00:00', '--job-id', '858', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_to_stg.py', '--cfg-path', '/tmp/tmp58bapomy']
+[2025-06-11T09:42:13.053+0000] {standard_task_runner.py:105} INFO - Job 858: Subtask load_customers_20180508
+[2025-06-11T09:42:13.328+0000] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_to_stg.load_customers_20180508 manual__2025-06-11T09:41:58.682100+00:00 [running]> on host 50af1b76beaf
+[2025-06-11T09:42:13.735+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_ingestion_to_stg' AIRFLOW_CTX_TASK_ID='load_customers_20180508' AIRFLOW_CTX_EXECUTION_DATE='2025-06-11T09:41:58.682100+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-11T09:41:58.682100+00:00'
+[2025-06-11T09:42:13.737+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-11T09:42:13.738+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-11T09:42:13.739+0000] {logging_mixin.py:190} INFO - Current task name:load_customers_20180508 state:running start_date:2025-06-11 09:42:12.922413+00:00
+[2025-06-11T09:42:13.739+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg and current dag run status:running
+[2025-06-11T09:42:13.740+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-06-11T09:42:13.754+0000] {postgres.py:191} INFO - Running copy expert: COPY stg.customers FROM STDIN WITH CSV DELIMITER ';' HEADER;, filename: /opt/***/INPUT/20180508/20180508.customers.csv
+[2025-06-11T09:42:13.830+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T09:42:14.725+0000] {logging_mixin.py:190} INFO - [INFO] Berhasil load 20180508.customers.csv ke stg.customers
+[2025-06-11T09:42:14.735+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-11T09:42:14.787+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-06-11T09:42:14.789+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_stg, task_id=load_customers_20180508, run_id=manual__2025-06-11T09:41:58.682100+00:00, execution_date=20250611T094158, start_date=20250611T094212, end_date=20250611T094214
+[2025-06-11T09:42:14.897+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-11T09:42:14.902+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-11T09:42:14.905+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg queued_at:2025-06-11 09:41:58.731560+00:00
+[2025-06-11T09:42:14.909+0000] {logging_mixin.py:190} INFO - Task hostname:50af1b76beaf operator:PythonOperator
+[2025-06-11T09:42:14.960+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-11T09:42:15.112+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T09:42:15.121+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

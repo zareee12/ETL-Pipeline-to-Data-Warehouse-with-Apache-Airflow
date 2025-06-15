@@ -1,0 +1,31 @@
+[2025-06-11T08:48:04.054+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-11T08:48:04.117+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_to_stg.truncate_countries_20180509 manual__2025-06-11T08:47:56.344686+00:00 [queued]>
+[2025-06-11T08:48:04.001+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_to_stg.truncate_countries_20180509 manual__2025-06-11T08:47:56.344686+00:00 [queued]>
+[2025-06-11T08:48:04.002+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-06-11T08:48:04.061+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): truncate_countries_20180509> on 2025-06-11 08:47:56.344686+00:00
+[2025-06-11T08:48:04.076+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=84) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-11T08:48:04.091+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_stg', 'truncate_countries_20180509', 'manual__2025-06-11T08:47:56.344686+00:00', '--job-id', '729', '--raw', '--subdir', 'DAGS_FOLDER/sql/dimensions/data_ingestion_to_stg.py', '--cfg-path', '/tmp/tmpacsrqqrz']
+[2025-06-11T08:48:04.099+0000] {standard_task_runner.py:105} INFO - Job 729: Subtask truncate_countries_20180509
+[2025-06-11T08:48:04.090+0000] {standard_task_runner.py:72} INFO - Started process 123 to run task
+[2025-06-11T08:48:04.286+0000] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_to_stg.truncate_countries_20180509 manual__2025-06-11T08:47:56.344686+00:00 [running]> on host 50af1b76beaf
+[2025-06-11T08:48:04.702+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_ingestion_to_stg' AIRFLOW_CTX_TASK_ID='truncate_countries_20180509' AIRFLOW_CTX_EXECUTION_DATE='2025-06-11T08:47:56.344686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-11T08:47:56.344686+00:00'
+[2025-06-11T08:48:04.706+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-11T08:48:04.723+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-11T08:48:04.729+0000] {logging_mixin.py:190} INFO - Current task name:truncate_countries_20180509 state:running start_date:2025-06-11 08:48:04.118703+00:00
+[2025-06-11T08:48:04.729+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg and current dag run status:running
+[2025-06-11T08:48:04.730+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-06-11T08:48:04.814+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T08:48:04.897+0000] {sql.py:509} INFO - Running statement: TRUNCATE TABLE stg.countries;, parameters: None
+[2025-06-11T08:48:04.915+0000] {logging_mixin.py:190} INFO - [INFO] Truncated table stg.countries
+[2025-06-11T08:48:04.916+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-11T08:48:04.957+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-06-11T08:48:04.961+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_stg, task_id=truncate_countries_20180509, run_id=manual__2025-06-11T08:47:56.344686+00:00, execution_date=20250611T084756, start_date=20250611T084804, end_date=20250611T084804
+[2025-06-11T08:48:05.046+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-11T08:48:05.048+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-11T08:48:05.049+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg queued_at:2025-06-11 08:47:56.379660+00:00
+[2025-06-11T08:48:05.053+0000] {logging_mixin.py:190} INFO - Task hostname:50af1b76beaf operator:PythonOperator
+[2025-06-11T08:48:05.123+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-11T08:48:05.193+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T08:48:05.198+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

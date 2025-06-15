@@ -1,0 +1,33 @@
+[2025-06-11T04:08:26.388+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-11T04:08:26.415+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_to_stg.load_cities_20180508 manual__2025-06-11T04:08:18.730721+00:00 [queued]>
+[2025-06-11T04:08:26.429+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_to_stg.load_cities_20180508 manual__2025-06-11T04:08:18.730721+00:00 [queued]>
+[2025-06-11T04:08:26.430+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-06-11T04:08:26.459+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_cities_20180508> on 2025-06-11 04:08:18.730721+00:00
+[2025-06-11T04:08:26.482+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=583) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-11T04:08:26.484+0000] {standard_task_runner.py:72} INFO - Started process 621 to run task
+[2025-06-11T04:08:26.496+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_stg', 'load_cities_20180508', 'manual__2025-06-11T04:08:18.730721+00:00', '--job-id', '218', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_to_stg.py', '--cfg-path', '/tmp/tmp4ri899rg']
+[2025-06-11T04:08:26.498+0000] {standard_task_runner.py:105} INFO - Job 218: Subtask load_cities_20180508
+[2025-06-11T04:08:26.605+0000] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_to_stg.load_cities_20180508 manual__2025-06-11T04:08:18.730721+00:00 [running]> on host bc5ec7a98490
+[2025-06-11T04:08:26.834+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_ingestion_to_stg' AIRFLOW_CTX_TASK_ID='load_cities_20180508' AIRFLOW_CTX_EXECUTION_DATE='2025-06-11T04:08:18.730721+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-11T04:08:18.730721+00:00'
+[2025-06-11T04:08:26.836+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-11T04:08:26.838+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-11T04:08:26.840+0000] {logging_mixin.py:190} INFO - Current task name:load_cities_20180508 state:running start_date:2025-06-11 04:08:26.416619+00:00
+[2025-06-11T04:08:26.841+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg and current dag run status:running
+[2025-06-11T04:08:26.841+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-06-11T04:08:26.866+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T04:08:26.976+0000] {sql.py:509} INFO - Running statement: TRUNCATE TABLE stg.cities;, parameters: None
+[2025-06-11T04:08:27.008+0000] {postgres.py:191} INFO - Running copy expert: COPY stg.cities FROM STDIN WITH CSV DELIMITER ';' HEADER;, filename: /opt/***/INPUT/20180508/20180508.cities.csv
+[2025-06-11T04:08:27.030+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T04:08:27.140+0000] {logging_mixin.py:190} INFO - [INFO] Berhasil load 20180508.cities.csv ke stg.cities
+[2025-06-11T04:08:27.140+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-11T04:08:27.160+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-06-11T04:08:27.161+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_stg, task_id=load_cities_20180508, run_id=manual__2025-06-11T04:08:18.730721+00:00, execution_date=20250611T040818, start_date=20250611T040826, end_date=20250611T040827
+[2025-06-11T04:08:27.184+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-11T04:08:27.218+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-11T04:08:27.219+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg queued_at:2025-06-11 04:08:18.759645+00:00
+[2025-06-11T04:08:27.219+0000] {logging_mixin.py:190} INFO - Task hostname:bc5ec7a98490 operator:PythonOperator
+[2025-06-11T04:08:27.250+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-11T04:08:27.281+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T04:08:27.284+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

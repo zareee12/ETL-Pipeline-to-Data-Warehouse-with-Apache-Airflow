@@ -1,0 +1,82 @@
+[2025-06-11T09:14:36.589+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-11T09:14:36.607+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_to_stg.dim_group.dim_customer manual__2025-06-11T09:14:10.182020+00:00 [queued]>
+[2025-06-11T09:14:36.618+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_to_stg.dim_group.dim_customer manual__2025-06-11T09:14:10.182020+00:00 [queued]>
+[2025-06-11T09:14:36.619+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-06-11T09:14:36.634+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): dim_group.dim_customer> on 2025-06-11 09:14:10.182020+00:00
+[2025-06-11T09:14:36.643+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=649) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-11T09:14:36.644+0000] {standard_task_runner.py:72} INFO - Started process 657 to run task
+[2025-06-11T09:14:36.645+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_to_stg', 'dim_group.dim_customer', 'manual__2025-06-11T09:14:10.182020+00:00', '--job-id', '776', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_to_stg.py', '--cfg-path', '/tmp/tmprg0ljp74']
+[2025-06-11T09:14:36.646+0000] {standard_task_runner.py:105} INFO - Job 776: Subtask dim_group.dim_customer
+[2025-06-11T09:14:36.691+0000] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_to_stg.dim_group.dim_customer manual__2025-06-11T09:14:10.182020+00:00 [running]> on host 50af1b76beaf
+[2025-06-11T09:14:36.780+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_ingestion_to_stg' AIRFLOW_CTX_TASK_ID='dim_group.dim_customer' AIRFLOW_CTX_EXECUTION_DATE='2025-06-11T09:14:10.182020+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-11T09:14:10.182020+00:00'
+[2025-06-11T09:14:36.781+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-11T09:14:36.782+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-11T09:14:36.782+0000] {logging_mixin.py:190} INFO - Current task name:dim_group.dim_customer state:running start_date:2025-06-11 09:14:36.608667+00:00
+[2025-06-11T09:14:36.783+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg and current dag run status:running
+[2025-06-11T09:14:36.784+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-06-11T09:14:36.784+0000] {sql.py:266} INFO - Executing: 
+TRUNCATE TABLE dm.dim_customer;
+
+INSERT INTO dm.dim_customer (
+            customer_id, customer_first_name, customer_middle_initial_name, 
+            customer_last_name, customer_address, customer_city_id,
+            customer_city_name, customer_zipcode, customer_country_id,
+            customer_country_name, customer_country_code, start_date, end_date
+        )
+        SELECT 
+            cu.customerid,
+            cu.firstname,
+            cu.middleinitial,
+            cu.lastname,
+            cu.address,
+            cu.cityid,
+            ci.cityname,
+            ci.zipcode,
+            ci.countryid,
+            co.countryname,
+            co.countrycode,
+            CURRENT_DATE,
+            NULL
+        FROM stg.customers cu
+        LEFT JOIN stg.cities ci ON cu.cityid = ci.cityid
+        LEFT JOIN stg.countries co ON ci.countryid = co.countryid;
+[2025-06-11T09:14:36.793+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T09:14:36.801+0000] {base.py:84} INFO - Retrieving connection 'data_warehouse_project'
+[2025-06-11T09:14:36.851+0000] {sql.py:509} INFO - Running statement: 
+TRUNCATE TABLE dm.dim_customer;
+
+INSERT INTO dm.dim_customer (
+            customer_id, customer_first_name, customer_middle_initial_name, 
+            customer_last_name, customer_address, customer_city_id,
+            customer_city_name, customer_zipcode, customer_country_id,
+            customer_country_name, customer_country_code, start_date, end_date
+        )
+        SELECT 
+            cu.customerid,
+            cu.firstname,
+            cu.middleinitial,
+            cu.lastname,
+            cu.address,
+            cu.cityid,
+            ci.cityname,
+            ci.zipcode,
+            ci.countryid,
+            co.countryname,
+            co.countrycode,
+            CURRENT_DATE,
+            NULL
+        FROM stg.customers cu
+        LEFT JOIN stg.cities ci ON cu.cityid = ci.cityid
+        LEFT JOIN stg.countries co ON ci.countryid = co.countryid;, parameters: None
+[2025-06-11T09:14:40.173+0000] {sql.py:518} INFO - Rows affected: 790072
+[2025-06-11T09:14:40.191+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-06-11T09:14:40.192+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_to_stg, task_id=dim_group.dim_customer, run_id=manual__2025-06-11T09:14:10.182020+00:00, execution_date=20250611T091410, start_date=20250611T091436, end_date=20250611T091440
+[2025-06-11T09:14:40.203+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-11T09:14:40.203+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-11T09:14:40.204+0000] {logging_mixin.py:190} INFO - Dag name:data_ingestion_to_stg queued_at:2025-06-11 09:14:10.199485+00:00
+[2025-06-11T09:14:40.204+0000] {logging_mixin.py:190} INFO - Task hostname:50af1b76beaf operator:SQLExecuteQueryOperator
+[2025-06-11T09:14:40.218+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-11T09:14:40.240+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T09:14:40.244+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
