@@ -1,4 +1,4 @@
-# 🚀 ETL Pipeline to Data Warehouse with Apache Airflow
+# 🚀 Sales Data Mart – Dimensional Model & ETL Pipeline
 
 [![Airflow DAG](https://img.shields.io/badge/Airflow-DAG-blue?logo=apache-airflow)](https://airflow.apache.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data--Warehouse-blue?logo=postgresql)](https://www.postgresql.org/)
